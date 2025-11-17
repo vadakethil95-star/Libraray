@@ -1,0 +1,230 @@
+body {
+  background-color: #f8f9fa;
+}
+
+
+.navbar {
+  background-color: hsl(58, 85%, 62%);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #ffffff !important;
+  display: flex;
+  align-items: center;
+  font-family: Algerian ;
+}
+
+.navbar-brand i {
+  margin-right: 8px;
+  font-size: 1.4rem;
+  font-family: Algerian ;
+  
+}
+
+.nav-link {
+  color: #fff !important;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #f8d210 !important;
+}
+
+
+.search-bar {
+  width: 60%;
+  margin: 25px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  border-radius: 50px 0 0 50px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+}
+
+.search-bar button {
+  border-radius: 0 50px 50px 0;
+}
+
+
+.book-card {
+  border-radius: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.book-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.book-card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.price {
+  color: #16a34a;
+  font-weight: bold;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1e3a5f;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.signup-container {
+  max-width: 420px;
+  margin: 60px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.signup-container h2 {
+  color: #414503;
+}
+
+.signup-form input {
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.signup-form button {
+  border-radius: 8px;
+  background-color: #1e3a5f;
+  border: none;
+}
+
+.signup-form button:hover {
+  background-color: #2b4e7c;
+}
+
+/* Login Page Styling */
+.login-container {
+  max-width: 400px;
+  margin: 80px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  color: #1e3a5f;
+}
+
+.login-form input {
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.login-form button {
+  border-radius: 8px;
+  background-color: #1e3a5f;
+  border: none;
+}
+
+.login-form button:hover {
+  background-color: #2b4e7c;
+}
+
+.navbar {
+  background-color: #1e3a5f;
+  padding: 12px;
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: Algerian ;
+
+}
+
+.navbar .nav-link {
+  color: #e0e0e0;
+  margin-right: 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #fff;
+}
+
+h2 {
+  color: #1e3a5f;
+}
+
+.table {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.table th {
+  background-color: #2b4e7c !important;
+  color: white;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+footer {
+  background: #f4f4f4;
+  color: #333;
+  padding: 12px 0;
+  margin-top: 40px;
+}
+/* Upload Form Styling */
+.card {
+  background: #ffffff;
+  border-radius: 15px;
+  border: 1px solid #d9e3f0;
+}
+
+.card h2 {
+  color: #1e3a5f;
+}
+
+.btn-primary {
+  background-color: #1e3a5f;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #2b4e7c;
+}
+.card {
+  background: #ffffff;
+  border-radius: 15px;
+  border: 1px solid #d9e3f0;
+}
+
+.btn-primary {
+  background-color: #1e3a5f;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #2b4e7c;
+}
+#btn{
+  background-color: #1e3a5f;
+  border-radius: 12px;
+  border: none;
+  color: #ccc;
+}

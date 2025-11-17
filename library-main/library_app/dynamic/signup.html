@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url 'index' %}">📚 BOOKORA</a>
+      <div class="d-flex ms-auto">
+        <a class="nav-link" href="{% url 'index' %}">Home</a>
+        <a class="nav-link active" href="{% url 'signup' %}">Sign Up</a>
+        <a class="nav-link" href="{% url 'login' %}">Login</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="signup-container">
+    <h2 class="text-center mb-4 fw-bold">Create Your Account</h2>
+    <form method="post" class="signup-form shadow">
+      {% csrf_token %}
+      <div class="mb-3">
+        <input type="text" class="form-control" name="username" placeholder="Username" required>
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control" name="email" placeholder="Email" required>
+      </div>
+      <div class="mb-3">
+        <input type="password" class="form-control" name="password" placeholder="Password" required>
+      </div>
+      <div class="mb-3">
+        <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary px-5">Register</button>
+      </div>
+
+      {% if message %}
+        <p class="text-danger text-center mt-3">{{ message }}</p>
+      {% endif %}
+      {% if success %}
+        <p class="text-success text-center mt-3">{{ success }}</p>
+      {% endif %}
+    </form>
+
+    <p class="text-center mt-4">Already have an account? 
+      <a href="{% url 'login' %}" class="text-decoration-none text-primary">Login</a>
+    </p>
+  </div>
+
+  <footer>
+    &copy; {{ year|default:2025 }} Library |Designed By SVC✌️
+  </footer>
+</body>
+</html>

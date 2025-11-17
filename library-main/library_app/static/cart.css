@@ -1,0 +1,75 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background: #bcff2b;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: 500;
+}
+
+h1 {
+  text-align: center;
+  color: #121f05;
+}
+
+.book-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.book-card {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 15px;
+  width: 240px;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.book-card img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.btn-add {
+  display: inline-block;
+  background: #8b9fff;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.cart-table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+.cart-table th, .cart-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.btn-del {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
